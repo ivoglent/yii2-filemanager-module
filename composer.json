@@ -1,0 +1,21 @@
+{
+    "name": "ivoglent/yii2-filemanager-module",
+    "description": "This module integrate with yii2-filemanager-project",
+    "type": "yii2-extension",
+    "keywords": ["yii2","yii2 filemanager"," file management"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Ivoglent Nguyen",
+            "email": "ivoglent@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ivoglent\\yii2\\filemanager\\": "./src"
+        }
+    }
+}
