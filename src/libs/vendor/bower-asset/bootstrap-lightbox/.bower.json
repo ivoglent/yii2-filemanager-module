@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-lightbox",
+  "version": "0.6.0",
+  "main": [
+    "docs/assets/js/bootstrap-lightbox.js",
+    "docs/assets/css/datepicker.css"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.1",
+    "bootstrap": ">=2.0.4 <3.0"
+  },
+  "homepage": "https://github.com/jbutz/bootstrap-lightbox",
+  "_release": "0.6.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.6.0",
+    "commit": "e22fc0ee29f1ebbe362a669eb574c3d838917aef"
+  },
+  "_source": "git@github.com:jbutz/bootstrap-lightbox.git",
+  "_target": "0.6.0",
+  "_originalSource": "git@github.com:jbutz/bootstrap-lightbox.git"
+}

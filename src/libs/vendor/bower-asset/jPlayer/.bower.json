@@ -1,0 +1,14 @@
+{
+  "name": "jPlayer",
+  "homepage": "https://github.com/happyworm/jPlayer",
+  "version": "2.4.0",
+  "_release": "2.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.4.0",
+    "commit": "0e35292afb4e026908cecf5907244085ff1150be"
+  },
+  "_source": "git@github.com:happyworm/jPlayer.git",
+  "_target": "2.4.0",
+  "_originalSource": "git@github.com:happyworm/jPlayer.git"
+}
