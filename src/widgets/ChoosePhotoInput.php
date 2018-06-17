@@ -16,6 +16,9 @@ use yii\widgets\InputWidget;
 class ChoosePhotoInput extends InputWidget
 {
     public $fileModuleId;
+    public $baseFileUrl = '';
+    public $fieldId = false;
+    public $callbackFunc = false;
 
     public function init()
     {
@@ -31,7 +34,10 @@ class ChoosePhotoInput extends InputWidget
         $module = \Yii::$app->getModule($this->fileModuleId);
         return $this->render('choose-photo-input', [
             'assetUrl' => $module->assetUrl,
-            'moduleId' => $this->fileModuleId
+            'moduleId' => $this->fileModuleId,
+            'baseFileUrl' => $this->baseFileUrl,
+            'fieldId' => $this->fieldId,
+            'callbackFunc' => $this->callbackFunc
         ]);
     }
 }

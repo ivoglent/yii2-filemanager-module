@@ -1947,13 +1947,16 @@ var encodeURL,show_animation,hide_animation,apply,apply_none,apply_img,apply_any
 		{
 			if (jQuery('#crossdomain').val() == 1)
 			{
-				windowParent.postMessage({
-						sender: 'responsivefilemanager',
-						url: urls[0],
-						field_id: external
-					},
-					'*'
-				);
+                urls.forEach(function(url) {
+                    windowParent.postMessage({
+                            sender: 'responsivefilemanager',
+                            url: url,
+                            field_id: external
+                        },
+                        '*'
+                    );
+				})
+
 			}
 			else
 			{
@@ -1976,7 +1979,7 @@ var encodeURL,show_animation,hide_animation,apply,apply_none,apply_img,apply_any
 		}
 		else
 		{
-			apply_any(urls[0]);
+			apply_any(urls);
 		}
 	}
 
@@ -1998,13 +2001,15 @@ var encodeURL,show_animation,hide_animation,apply,apply_none,apply_img,apply_any
 		{
 			if (jQuery('#crossdomain').val() == 1)
 			{
-				windowParent.postMessage({
-						sender: 'responsivefilemanager',
-						url: urls[0],
-						field_id: external
-					},
-					'*'
-				);
+                urls.forEach(function(url) {
+                    windowParent.postMessage({
+                            sender: 'responsivefilemanager',
+                            url: url,
+                            field_id: external
+                        },
+                        '*'
+                    );
+                })
 			}
 			else
 			{
@@ -2054,13 +2059,15 @@ var encodeURL,show_animation,hide_animation,apply,apply_none,apply_img,apply_any
 		{
 			if (jQuery('#crossdomain').val() == 1)
 			{
-				windowParent.postMessage({
-						sender: 'responsivefilemanager',
-						url: urls[0],
-						field_id: external
-					},
-					'*'
-				);
+                urls.forEach(function(url) {
+                    windowParent.postMessage({
+                            sender: 'responsivefilemanager',
+                            url: url,
+                            field_id: external
+                        },
+                        '*'
+                    );
+                })
 			}
 			else
 			{
@@ -2083,7 +2090,7 @@ var encodeURL,show_animation,hide_animation,apply,apply_none,apply_img,apply_any
 		}
 		else
 		{
-			apply_any(urls[0]);
+			apply_any(urls);
 		}
 	}
 
@@ -2106,13 +2113,15 @@ var encodeURL,show_animation,hide_animation,apply,apply_none,apply_img,apply_any
 	{
 		if (jQuery('#crossdomain').val() == 1)
 		{
-			window.parent.postMessage({
-					sender: 'responsivefilemanager',
-					url: url,
-					field_id: null
-				},
-				'*'
-			);
+            url.forEach(function(_url) {
+                windowParent.postMessage({
+                        sender: 'responsivefilemanager',
+                        url: _url,
+                        field_id: external
+                    },
+                    '*'
+                );
+            })
 		}
 		else
 		{
